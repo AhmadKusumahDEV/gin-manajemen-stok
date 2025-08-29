@@ -1,7 +1,6 @@
 package api
 
 import (
-	middleware "manajemen_warehouse/internal/api/middelware"
 	"net/http"
 
 	"github.com/gin-contrib/cors"
@@ -15,7 +14,7 @@ var (
 func init() {
 	app = gin.New()
 	app.Use(cors.Default())
-	app.Use(middleware.HandlePanic())
+	// app.Use(middleware.HandlePanic())
 
 	app.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
