@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/engine.go",
+      "src": "vercel/engine.go",
       "use": "@vercel/go"
     }
   ],
@@ -11,7 +11,7 @@
     [
       {
         "source": "/(.*)",
-        "destination": "/api/engine.go"
+        "destination": "/vercel/engine.go"
       }
     ]
   }

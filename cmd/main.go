@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	database "manajemen_warehouse/internal/config"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	db := database.NewDB()
+	db.Ping()
 }
