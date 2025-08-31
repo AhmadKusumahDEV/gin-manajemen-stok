@@ -1,7 +1,7 @@
 package api
 
 import (
-	middleware "manajemen_warehouse/internal/middelware"
+	middleware "manajemen_warehouse/pkg/middelware"
 	"net/http"
 
 	"github.com/gin-contrib/cors"

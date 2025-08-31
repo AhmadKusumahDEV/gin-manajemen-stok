@@ -1,8 +1,6 @@
 package main
 
-import (
-	database "manajemen_warehouse/internal/config"
-)
+import database "manajemen_warehouse/pkg/config"
 
 func main() {
 	db := database.NewDB()
